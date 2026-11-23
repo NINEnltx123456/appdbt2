@@ -1,5 +1,5 @@
-import KeyStoreApp from "./components/KeyStoreApp";
+import WiggleHome from "./components/WiggleHome";
 
 export default function Page() {
-  return <KeyStoreApp />;
+  return <WiggleHome />;
 }

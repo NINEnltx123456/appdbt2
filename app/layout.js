@@ -1,21 +1,17 @@
 import "./globals.css";
-import { Noto_Sans_Thai } from "next/font/google";
+import { Inter } from "next/font/google";
 
-const noto = Noto_Sans_Thai({
-  subsets: ["latin", "thai"],
-  weight: ["400", "500", "600", "700", "800"],
-  display: "swap",
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "KeyStore — Your Keyboard Store",
-  description: "ร้านคีย์บอร์ดออนไลน์ KeyStore",
+  title: "Wiggle UI — Widgets for the Web",
+  description: "An open-source curated collection of copy-paste widgets for your next project.",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="th">
-      <body className={noto.className}>{children}</body>
+    <html lang="en">
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
